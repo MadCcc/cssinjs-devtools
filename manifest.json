@@ -7,5 +7,34 @@
   "action": {
     "default_popup": "src/popup/index.html"
   },
-  "devtools_page": "src/devtools/index.html"
+  "devtools_page": "src/devtools/index.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "js": [
+        "dist/content.min.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "dist/web-accessible.min.js"
+      ],
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "src/icons/antd.png",
+    "48": "src/icons/antd.png",
+    "64": "src/icons/antd.png",
+    "128": "src/icons/antd.png"
+  }
 }
