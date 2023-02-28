@@ -3,10 +3,10 @@ import { defineConfig } from 'father';
 export default defineConfig({
   umd: {
     entry: {
-      'dist/popup/popup': {
+      'src/popup/index': {
         output: 'dist/popup',
       },
-      'dist/devtools/devtools': {
+      'src/devtools/index': {
         output: 'dist/devtools',
       }
     }
