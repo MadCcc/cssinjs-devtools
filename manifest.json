@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "@ant-design/cssinjs extension",
+  "description": "Chrome extension for @ant-design/cssinjs",
+  "version": "0.0.0",
+  "author": "MadCcc",
+  "action": {
+    "default_popup": "src/popup/index.html"
+  },
+  "devtools_page": "src/devtools/index.html"
+}
